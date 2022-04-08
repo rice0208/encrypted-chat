@@ -9,6 +9,17 @@
 pip install encrypted-chat
 ```
 
+然后直接通过包来运行：
+
+Linux/MacOS：
+```
+$ python3 -m encrypted-chat
+```
+Windows：
+```
+$ python -m encrypted-chat
+```
+
 这个程序需要你和朋友一起运行，因此你们需要同时打开程序并在某一社交软件上在线。
 你们需要约定好一个`g`与一个`p`（通常情况下可以设成两个大数字，但不宜超过10的50次方影响运行速度，最好是素数）。
 
