@@ -26,7 +26,7 @@ def get_key_from_exchange(p):
 
 try:
     try:
-        g = int(input("Welcome to Flog encrypt/decrypter.\nPlease enter your g-code: "))
+        g = int(input("Welcome to encrypted chat.\nPlease enter your g-code: "))
     except ValueError:
         print("\n[Error] Invalid g input.\n")
         exit(0)
