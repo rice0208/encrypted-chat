@@ -47,7 +47,7 @@ try:
         if option == 1:
             print("(Ctrl+C to quit encrypting mode)")
             key = get_key_from_exchange(p)
-            de = Encrypt(str(key)[-8:], "abcdefgh")
+            de = Encrypt(str(key + 1e8)[-8:], "abcdefgh")
             while True:
                 try:
                     m = de.encrypt(input("[Input] Your message: ").encode("utf8"))
@@ -57,7 +57,7 @@ try:
         if option == 2:
             print("(Ctrl+C to quit decrypting mode)")
             key = get_key_from_exchange(p)
-            de = Encrypt(str(key)[-8:], "abcdefgh")
+            de = Encrypt(str(key + 1e8)[-8:], "abcdefgh")
             while True:
                 try:
                     m = de.decrypt(input("[Input] Your code: ").encode("utf8"))
